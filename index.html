@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,8 @@
     <!--font for the page-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--css file-->
+    <link rel="stylesheet" href="styles/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Moderustic:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap"
       rel="stylesheet"
@@ -219,75 +221,207 @@
         </div>
       </div>
     </header>
-    <main class="mb-10 mx-auto bg-[rgb(244,241,241)]">
-      <img class="hidden lg:block" src="images/Vector.png" alt="" />
-      <button
-        class="rounded-full lg:py-4 lg:px-10 font-bold mt-4 bg-[#FFFFFF] ml-20 flex text-2xl"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-6"
+    <main class="mb-10 mx-auto">
+      <!--design thoughtful section-->
+      <section class="bg-[rgb(244,241,241)] mb-10">
+        <img class="hidden lg:block" src="images/Vector.png" alt="" />
+        <button
+          class="rounded-full lg:py-4 lg:px-10 font-bold mt-10 bg-[#FFFFFF] lg:ml-20 flex text-2xl px-2 py-4"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-          />
-        </svg>
-        About Us
-      </button>
-      <!--main div of the design thoughtful div-->
-      <div class="flex justify-around lg:flex-row flex-col gap-5">
-        <!--Heading and para div-->
-        <div>
-          <h2 class="font-bold text-3xl lg:text-6xl mx-auto mt-5 sm:mt-10">
-            We design thoughtful,<br />liveable spaces
-          </h2>
-          <p class="text-gray-500 mt-5">
-            The barn house captivates with its blend of rustic charm and<br />modern
-            sophistication, featuring weathered wood, sleek metal accents.
-          </p>
-          <!--card div-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+            />
+          </svg>
+          About Us
+        </button>
+        <!--main div of the design thoughtful div-->
+        <div class="flex justify-around lg:flex-row flex-col gap-7">
+          <!--Heading and para div-->
           <div>
-            <!--first card-->
-            <div class="flex mt-5 shadow-l px-5 py-5 rounded-xl bg-white">
-              <!--image div-->
-              <div>
-                <img src="images/commercial.png" alt="" />
+            <h2 class="font-bold text-3xl lg:text-6xl mx-auto mt-5 sm:mt-10">
+              We design thoughtful,<br />liveable spaces
+            </h2>
+            <p class="text-gray-500 mt-5">
+              The barn house captivates with its blend of rustic charm and<br />modern
+              sophistication, featuring weathered wood, sleek metal accents.
+            </p>
+            <!--card div-->
+            <div>
+              <!--first card-->
+              <div class="flex mt-5 shadow-l px-5 py-5 rounded-xl bg-white">
+                <!--image div-->
+                <div>
+                  <img src="images/commercial.png" alt="" />
+                </div>
+                <!--text div-->
+                <div class="ml-5">
+                  <h2 class="font-bold text-xl">Commercial</h2>
+                  <p class="text-gray-500">
+                    The barn house captivates with its blend<br />of rustic
+                    charm and modern.
+                  </p>
+                </div>
               </div>
-              <!--text div-->
-              <div class="ml-5">
-                <h2>Commercial</h2>
-                <p>
-                  The barn house captivates with its blend<br />of rustic charm
-                  and modern.
-                </p>
-              </div>
-            </div>
-            <!--second card-->
-            <div class="flex mt-10 shadow-xl px-5 py-5 rounded-xl bg-white">
-              <!--image div-->
-              <div>
-                <img src="images/residential.png" alt="" />
-              </div>
-              <!--text div-->
-              <div class="ml-5">
-                <h2>Residential</h2>
-                <p>
-                  The barn house captivates with its blend<br />of rustic charm
-                  and modern.
-                </p>
+              <!--second card-->
+              <div class="flex mt-10 shadow-l px-5 py-5 rounded-xl bg-white">
+                <!--image div-->
+                <div>
+                  <img src="images/residential.png" alt="" />
+                </div>
+                <!--text div-->
+                <div class="ml-5">
+                  <h2 class="font-bold text-xl">Residential</h2>
+                  <p class="text-gray-500">
+                    The barn house captivates with its blend<br />of rustic
+                    charm and modern.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+          <!--image div-->
+          <div class="mb-10"><img src="images/Rectangle.png" alt="" /></div>
         </div>
-        <!--image div-->
-        <div><img src="images/Rectangle.png" alt="" /></div>
-      </div>
+      </section>
+      <!--Our latest Portfolio section-->
+      <section class="mx-auto mt-10">
+        <button
+          class="bg-[#ABEF5F33] rounded-full lg:py-4 lg:px-10 font-bold mx-auto mt-5 px-20 py-5 flex"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+            />
+          </svg>
+
+          Explore our Latest works
+        </button>
+
+        <div class="text-center">
+          <p class="mt-5">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication,<br />featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!--main div of grid row and column-->
+        <div>
+          <!--first line-->
+          <div
+            class="lg:flex justify-around gap-10 grid lg:grid-col-2 md:grid-col-2 sm:grid-col-1"
+          >
+            <!--first card-->
+            <div
+              class="flex mt-5 shadow-2xl px-5 py-5 rounded-xl bg-white-50 lg:w-9/12"
+            >
+              <!--image div-->
+              <div>
+                <img src="images/img1.png" alt="" />
+              </div>
+              <!--text div-->
+              <div class="ml-5">
+                <h2 class="font-bold text-3xl">Commercial</h2>
+                <p class="text-gray-500">
+                  The barn house captivates with its blend of rustic charm<br />and
+                  modern. The barn house captivates with its blend of<br />rustic
+                  charm and modern .
+                </p>
+                <button class="font-bold text-2xl flex mt-7">
+                  View Details
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    stroke="black"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 bg-[#ABEF5F] ml-1 rounded-full"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!--second card-->
+            <div class="flex mt-5 shadow-2xl px-5 py-5 rounded-xl bg-white-50">
+              <img src="images/img2.png" alt="" />
+            </div>
+          </div>
+          <!--second line-->
+          <div
+            class="lg:flex justify-around gap-10 grid lg:grid-col-2 md:grid-col-2 sm:grid-col-1"
+          >
+            <!--first card-->
+            <div class="flex mt-5 shadow-2xl px-5 py-5 rounded-xl bg-white-50">
+              <img src="images/img3.png" alt="" />
+            </div>
+            <!--second card-->
+            <div
+              class="flex mt-5 shadow-2xl px-5 py-5 rounded-xl bg-white-50 lg:w-6/12"
+            >
+              <!--image div-->
+              <div>
+                <img src="images/img4.png" alt="" />
+              </div>
+              <!--text div-->
+              <div class="ml-5">
+                <h2 class="font-bold text-3xl">Commercial</h2>
+                <p class="text-gray-500">
+                  The barn house captivates with<br />its blend of rustic charm
+                  and<br />
+                  modern.
+                </p>
+                <button class="font-bold text-2xl flex mt-7">
+                  View Details
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    stroke="black"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 bg-[#ABEF5F] ml-1 rounded-full"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!--third card-->
+            <div class="flex mt-5 shadow-2xl px-5 py-5 rounded-xl bg-white-50">
+              <img src="images/img5.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--let's connect section-->
+      <section class="mx-auto mt-10" id="my-img"></section>
     </main>
     <footer></footer>
   </body>
